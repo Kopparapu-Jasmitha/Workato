@@ -1,0 +1,84 @@
+Workato is actually defined from Work and Automation and it is essentially an enterprise grade automation platform. 
+To integrate their applications and automate bussiness workflows without compromising security and governance.
+It allows workato to automate bussiness processes(hiring the people and that process) like in a visual way without needing a developer skill set and this we refer as Low code or No code.
+In this no interchanging within the applications is not there and no manual performing task is there. It allow users to automate bussiness process.
+Tools: 
+        which handles the needs of an enterprise by having different features
+1. iPaas:Data is stored
+2. ETL/ELT: Involving bulk tranfers of data and records and syncing can be done by workato 
+3. API Management: you can expose your integration to your external parties or for external apps.
+4.Workflow Automation: it can be created by workato
+5.Conversational Bots: Able to build and deplay interactive work bots in Microsoft Teams in Facebook Workplace, even in slack
+All these are available in Workato and it is a server less platform for users so just we need to login
+2. Workato Account:
+      Direct signin through workato link or by using an application and sign in
+3.Workato Environments or workato workspaces(Dev,QA,Prod): switch from personal account to team environment to build recipes.each user given access to  multiole environments
+       The recipies can be migrated from account to other account via the Recipe Lifecycle Management Tool.
+4.Workato User Interface(UI): 
+#nothing
+Normally we can clone "Infinite Recipies" from the Community Library.
+
+Recipe Overview:
+   Recipe is a sequence of instructions handling the flow of data between connected applications.Recipe contain trigger followed  by actions.
+      Recipe is a cookbook means it has all the instructions same "In this Workato the Recipe is basically the logical steps that will be executed to meet your Integration".
+The three main Ingredients of recipe are 1.Connections 2.Trigger 3. Actions
+1. Connections: It is basically all applications that your recipe will touch means If we are using salesforce,google sheets or slack, we would need to have this connectiod into your recipe.
+2.Trigger: First step in our recipe and it can only be one. trigger is basically what your recipe will listen out for, or this will tell our recipe to kick start. # trigger when recipe is eecuted
+## If the trigger is not present then the recipe can't start.
+3.Actions: No limit. So an action in your recipe is basically all of the steps that you want to execute in your recipe. #action this is what steps your recipe will perform
+We can connect any thong which is present on cloud, on-premise,Databases,Micro-services, Connector SDK.
+We can also build our own application in workato. and we can connect no limit of applications you can connect.
+Recipe can be created in two ways 1. creating from scratch 2.is cloning from an existing community recipes.
+Every time we save a recipe the version is also automatically saved.so, we can to previous versions of recipe and can be restored any time and the thing is we are not able to delete the version of a recipe.we can say who modified recipe and changed the recipe.
+Recipe URL:
+   If we send an recipe url to anybody it will not work and it will work only in our computer 
+   Each recipe has unique numeric ID.
+   Recipies are private by default.Make public with the toggle  under settings>sharing.
+   Private recipies also have links which allow us to share privately.
+Recipe Sharing have two methods 1. private sharing Link(In this allow to view  but cannot modify and can revoke any time)
+                                2. List recipe on workato community.
+1.Connections:
+         When we are trying to connect to other applications inside workato. It allows us to pick different authentication Options like Basic auth, OAuth2, Api tokens,custom protocols.
+         OAuth is recommended where it is applicable, Integration user accounts should be used to connect to various applications.
+         the connection is reusable in other recipes
+2. Triggers:
+         triggers can be classified into different types based on how they check for and retrive new events
+          1. Real-time:implemented with web hooks(no waiting)
+          2. polling: fetch records forevery 5 to 10min implemented by workato automatically
+          3. Scheduled : can be scheduled at any time eg: everyday at 12;00 am 
+       .All these can be even single or bulk. Real time is most efficient one and we go to polling if api of application is not supported.
+       .Trigger events are delivered in the same order as events were created or modified(in the app)-"Workato Cursors"
+        .workato Cursors: From the inactive time the data isfetched when we start our recipe. Cloning a recipe resets the cursor
+        . Trigger dispatch- single and Batch
+      . Each trigger event is processed only once i.e no duplicates 
+      . Event filtering using Conditions( add conditions to trigger if you do want to recieve all of these records)
+     condition: limkit processing to a defined subset of trigger events by toggling on trigger conditions.
+3.Actions:
+       Recipe steps can be simple actions, or control flow statements that help you describe bussiness logic.
+       types:Can create a record, read a frecord,update a record, delete a record, search a record.
+       control: conditions, loops, error monitor, stop,recipe functions(call another recipe).
+       Data: single, batch/List dispatch
+       Data Mapping: Mapping,Formulas,Lookups,data transformation,data manipulation.
+       . Based on API the custom actions can create own http request.
+Data Types:
+    String,Integer, Number,Object,date,Date time,Boolean(True/False),Array/List
+Formula Mode- common examples
+        Split: Splits up a string based on a delimiter
+        "John Doe".split(" ")→ ["John","Doe"]
+
+        First: Returns the first item in the list (similar to Last)
+        "John Doe".split(" ").first→ "John"
+        
+        Slice: Returns a part of the string based on the given position indexes
+        "California".slice(0,3) → "Cal"
+        
+        Upcase: Converts the entire string into uppercase
+        "California".slice(0,3).upcase "CAL"\
+stopping recipe:
+   Stopping a recipe makes it Inactive
+      . It will stop picking up trigger events
+      . Polling Triggers will remember where they left off via a trigger cursor
+   .Webhook triggers will stop listening for events when the recipe is stopped.
+Jobs ans Job Reports:
+    .When an active recipe processes a trigger event, i.e actions in the recipe are executed, it results in a job.
+    . The Jobs report is a record of all processed jobs. It can be customized to display data values relevant to the job.
