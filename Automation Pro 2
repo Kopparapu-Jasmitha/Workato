@@ -1,1 +1,48 @@
-
+Conditional Actions:
+      We can set a condition within the recipes to better define the workflow processing logic.
+      Conditional actions will be carried out only if the specified condition is true
+      Like if or else
+      Two types of Conditional Actions:
+       1. IF  2. IF-Else
+       IF: Data Field(on what like Amount), Condition(greater,equals), Value... Data and Values are Case Sensitive.
+     Common Use cases: 1.Deduplication Logic-ensure that when you Sync over information to other application,there would not be the same record  
+                       2.stopping the recipe- When an error occurs then we stop running the recipe
+                       3.Invoking different function recipies
+                       4.Setting up notifications for different error messages.
+     Common Mistakes: 1.Mapping data pill from the wrong step output.
+                      2.Mismatching the data types against operators.
+  Null data conditions: "equals/ does not equal" and "is present/is not present"
+2.Error Handling:
+Error Monitoring and Handling:
+          This can be used to 
+              . Monitor Actions
+              . retryfailed steps
+              . execute other steps due to or in spite of the error
+         Ex: send a custom error msg or error notification  when an error occurs.
+         . stop Action- stops the job from executing further actions in the recipe
+3a.Repeat Action
+      Loop through a list of records
+      . use a repeat action to iterate/loop through these
+      . Used when working with a batch of records or list of items
+     Common Use cases: CSVs/Database rows, Order line items(ETL),Any type of list/array
+     Common Mistakes: .Mapping data pill from the wrong step output.
+                      . Using a repeat actions when bulk actions/batch actions are avilable.
+3b.Variables:
+         Place holder to store data
+         Create  variables to store information to be referenced and manipulated
+         Once created, variables can also be updated within the same workflow.
+         The lifetime of a variable is the duration of a single job.
+      Common use cases: Transforming data 1.Formulas 2.list
+      Common mistakes: unneccesary& excessive use, Recipe variables vs Account Properties, Failing to initialize your variables
+                         .An unitialized variable has a value of null or nil
+4.Look up Tables:
+          Mini-database table
+         Organized like a database table, with coloumns and rows of dta.
+         Create a lookup table by importing from a csv or manually add coloumns or rows.
+         supports up to 100,000 entries and 10 columns /entry.
+        CRUD- search,retrive,update,delete record
+        . Entries in lookup table can be retrived the actions like added,update,deleted via a recipe action
+      Common use cases: static reference data,adding data of Temporary logs/error handling, compiling data for daily reports.
+      Temporary Login: use lookup tables as a temporary data store for small data sets. Ex: error messages,state of a process
+      Common mistakes: Storing large amounts of data , storing lookup data that already exists in source systems.
+...The total number of number of rows you can retrive from a lookup table- 10,000
