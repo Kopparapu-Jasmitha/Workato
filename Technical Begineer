@@ -1,1 +1,40 @@
+The workato platform allows us to create intelligent process automation work flows to : 
+    1.remove need for Labor in Manual Task 2. Increase Predictability(of services)
+    3. Increase Reliabiity(less errors)   4. Reduce cost through automation
+Basic building blocks: Trigger-->actions-->actions--> End.
+     . Trigger is known as object as it stores various information inside it and it is used for decision making. and triggers are events that kick offa recipe
+     . A workato recipe has trigger events and a list of one or more actions.we can also include conditional actions and repeat actions to handle arrays.
+     . Workato recipe allows us to automate processes between the  tools systems and apps that we use.
+     . Acations are set of tasks you want to automate.
+. recipes are sets of instructions that automate complex workflows and they describe how we want our application to work, these are incredibly flexible
+. Workato provides access controls that are role-based and can be customised.
+. Dependency graph shows the relationship between connections to apps and assets(recipes). 
+.workato makes managing the project lifecycle easier with environments(dev,test(QA),prod)  withount any interruptions and downtime.
+ creating a connection: first we need go to projects and right side we have create recipe-->create connection-->choose authentiacation--> connect.
+Creating a Recipe: clock on create recipe at right side--> name-->folder selection--> pick a starting point-->start building
+choose an application-->authenticate with credentials-->connection name-->connect
+select your connection-->connection name-->connect
+choose your trigger-->feilds to retrive-->customize setup(recipe pick up events-begining of time)-->review and edit as needed
+setupactions(if,if else)-->choose tasks to automate-->search organizations-->active connections-->Name(map data flow)
+validating by testing the recipe-->at the top test jobs-->at right up test
+make quick changes in edit mode(recipe)-->details-->drop-->test jobs-->test-->start your recipe
 
+API-Application Programming Interface ,  APIM-API Management(also involves governance and security)
+ATS-Applicant Tracking System, BA or BSA-Business Analyst or Business Systems Analyst
+CIO-Chief Information Officer(They manage relationships with internal customers (users) and oversee the organization's IT infrastructure.
+CPQ-Configure, Price, Quote, Software that manages quoting and configuration for complex purchases. (Example: Salesforce CPQ)
+EDI-Electronic Data Interchange(such as purchase orders and invoices.)  , ERP-Enterprise Resource Planning(Software used to organize business information, build financial models, and help large companies operate efficiently)
+Etl-extract,transform,load  ,  ELt- extract,load,transform
+HRIS-Human Resources Information System(HR processes and stores employ data)
+ITSM-IT Service Management A set of policies, processes and procedures for managing the implementation, improvement and support of customer-oriented IT services.
+Low Code/No Code, MDM-Master Data Management( a system of ensuring a company's master copy of their business data is consistent, clean, and correct.)
+ODBC-Open Database Connectivity (A standard for connections to move data between databases, BI tools, and ETL/ELT tools.)
+SaaS- Software as a Service.
+Shadow IT- The situation that develops when business teams take IT into their own hands because of the perception that the IT team cannot fulfill their requests. For example they use Zapier to build their own integration
+TTL-Time To Live: The amount of time to allow responses (data) to be cached. After TTL is reached, the data is no longer available. Workato has TTL as a configurable setting for API caching to improve response time and reduce load on business applications.
+
+Integration/Automation:three fundamental use cases- problems and isues that we are facing with customers reasons
+   1.Data consistency-the same data of customers is stored in different databases so,to understand its difficult what the product is or the  customer is .... (Different databases/applications Synchronize their data)
+   2. Multistep Process- fundamental enabling independent application to collaborate in the context of a  business process and to automate bussiness process itself...(Independent Applications Collaborate to Automatea Bussiness Process)
+   3. Composite services- to develop application we have pre existing data (both erp,crm)
+         
