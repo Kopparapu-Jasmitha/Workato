@@ -36,5 +36,8 @@ TTL-Time To Live: The amount of time to allow responses (data) to be cached. Aft
 Integration/Automation:three fundamental use cases- problems and isues that we are facing with customers reasons
    1.Data consistency-the same data of customers is stored in different databases so,to understand its difficult what the product is or the  customer is .... (Different databases/applications Synchronize their data)
    2. Multistep Process- fundamental enabling independent application to collaborate in the context of a  business process and to automate bussiness process itself...(Independent Applications Collaborate to Automatea Bussiness Process)
-   3. Composite services- to develop application we have pre existing data (both erp,crm)
+   3. Composite services- to develop application we have pre existing data (both erp,crm) from using that we can develop...(Applications consume API's Built by composing Other Applications)
+The partner portal will allows you to: POC(primary point of Contact and support),Partner exclusive tools(access),Content and resources, Deal Registration and Pipeline Management(Contract),
+                                       Marketing(CRM), Success planning(registering in govt portal and success plans),Tracking and Reporting.
+
          
