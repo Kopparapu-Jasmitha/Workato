@@ -39,5 +39,12 @@ Integration/Automation:three fundamental use cases- problems and isues that we a
    3. Composite services- to develop application we have pre existing data (both erp,crm) from using that we can develop...(Applications consume API's Built by composing Other Applications)
 The partner portal will allows you to: POC(primary point of Contact and support),Partner exclusive tools(access),Content and resources, Deal Registration and Pipeline Management(Contract),
                                        Marketing(CRM), Success planning(registering in govt portal and success plans),Tracking and Reporting.
-
-         
+. Workato Intelligent bussiness processes: Enterprise-grade foundation(security),Citizen Integrators,conversational integration(Bot),IT governance(enterprise cross visibility of users and usage of integration processes),Extensible Platform  
+Trigger types:
+     1.trigger mechanism- when they check for new events-polled,real-time,Scheduled
+     2.trigger dispatch-how they group new events- Single,bulk/batch
+     3.Trigger event type- how the recipe will be intiated- created,updated,deleted
+.trigger conditions 14
+CONTAINS	STARTS WITH	ENDS WITH	EQUALS	GREATER THAN	IS TRUE	IS PRESENT
+DOESN'T CONTAIN	DOESN'T START WITH	DOESN'T END WITH	DOES NOT EQUAL	LESS THAN	IS NOT TRUE	IS NOT PRESENT
+.Action in an app-Every application has an available set of actions which differ across connectors and will generally include (OOB- out of box actions)-create, update, upsert, search, get, delete, etc.
