@@ -1,1 +1,24 @@
-
+Integration: It allows data to flow between different bussiness applications.If data is shared to one system and then the data is automatically replicated to all systems.
+Bussiness process automation: It is the technology-enabled automation of tasks or bussiness processes.
+      .It reduces human Intervention in bussiness processes by automating manual,mundane,swivel-chair(total manual) steps to reduce risk and improve efficiency.
+.Integration(Data Automation)-->Task Automation-->Process Automation-->Enterprise Automation
+       |                            |                     |                      |
+     Data changes               Events,logic         Orchestrate people     Scalable to the entire company
+                                  and actions         and technology       (many process means we use this)
+   . We can do automation upto some part without integration,but without automation the integration cannot be done.
+Incoming and outgoing of data we have four:
+ 1. API-A way for an application to make data available programatically
+ 2. UI-to interact for humans,bots with in an application through forma and buttons
+ 3.Databases-to store data
+ 4.Files:To share files anbd accesible on shared drives 
+Swivel chair integration: done by manual, looking up for data in one application and rewrite the data into other application.No integration 
+File-based Integration:Most common integration approach, we have data formats of files like FTP,BOX,S3,csv,xml,JSON
+             exportdata-->FTP--->some changes-->XMl-->import data
+               (app1)                                     (app2)
+     .Exporting the data how the app1 can read and importing data how app2 can read
+API-based integration- exporting and importing of data is done by sending requets to the systems and in this an API is present
+UI-based integration- look for data by machine by using the screen and rewrite the data into other machine into the screen
+Data base Integration- directly connected to the data base of the system and updates are done.Mostly avoided process but in last resorts it is used.(JDBC,SQl,CDC)
+Mixed Interface Integration- export data by using csv files and import(push) the data by using API.
+Point-to-point Integration Spaghetti-converting of data two types- by using codes, and another is malware.
+1. experience integration 2.process intedgration3.data integration
