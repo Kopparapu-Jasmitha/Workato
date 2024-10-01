@@ -3,7 +3,7 @@ Conditional Actions:
       Conditional actions will be carried out only if the specified condition is true
       Like if or else
       Two types of Conditional Actions:
-       1. IF  2. IF-Else
+       1. IF  2. IF-Else 3.ELSE
        IF: Data Field(on what like Amount), Condition(greater,equals), Value... Data and Values are Case Sensitive.
      Common Use cases: 1.Deduplication Logic-ensure that when you Sync over information to other application,there would not be the same record  
                        2.stopping the recipe- When an error occurs then we stop running the recipe
@@ -24,6 +24,7 @@ Error Monitoring and Handling:
       Loop through a list of records
       . use a repeat action to iterate/loop through these
       . Used when working with a batch of records or list of items
+      .upsert-insert and update the data from one aapplication to another application without creating duplicates.
      Common Use cases: CSVs/Database rows, Order line items(ETL),Any type of list/array
      Common Mistakes: .Mapping data pill from the wrong step output.
                       . Using a repeat actions when bulk actions/batch actions are avilable.
@@ -39,10 +40,15 @@ Error Monitoring and Handling:
           Mini-database table
          Organized like a database table, with coloumns and rows of dta.
          Create a lookup table by importing from a csv or manually add coloumns or rows.
-         supports up to 100,000 entries and 10 columns /entry.
+         supports up to 100,000 entries and 10 columns /entry. and retrive 10,000 entries
         CRUD- search,retrive,update,delete record
+      . Tools navigation menu option can be used to manually create a lookup table.
         . Entries in lookup table can be retrived the actions like added,update,deleted via a recipe action
       Common use cases: static reference data,adding data of Temporary logs/error handling, compiling data for daily reports.
       Temporary Login: use lookup tables as a temporary data store for small data sets. Ex: error messages,state of a process
       Common mistakes: Storing large amounts of data , storing lookup data that already exists in source systems.
 ...The total number of number of rows you can retrive from a lookup table- 10,000
+Lists:
+.two types of lists 1.Basic lists-Rows are self-contained where all information required is explicitly expressed in each field.
+2. Nested lists- Details of the rows in a parent list are contained in a seperate child list.
+.When using actions that accept lists as an input, there are two input modes that can be chosen: dynamic list or fixed list.
