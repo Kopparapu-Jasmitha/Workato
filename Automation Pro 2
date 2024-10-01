@@ -52,3 +52,16 @@ Lists:
 .two types of lists 1.Basic lists-Rows are self-contained where all information required is explicitly expressed in each field.
 2. Nested lists- Details of the rows in a parent list are contained in a seperate child list.
 .When using actions that accept lists as an input, there are two input modes that can be chosen: dynamic list or fixed list.
+Recipe Functions:
+recipe functiona are a type of recipe that can be called from another recipe 
+adv: Easier to test,More redable,Sharing across recipes
+features: 1. Synchronous- calling recipe(parent)---call---> Recipe function(child).In this the parent wil be waiting until the response from child.
+                                                <----respond---
+           2.Asynchronous- calling recipe-----call--> recipe function.In this don't wait for resonding and doesramining steps.
+Building a recipe function:
+         In this we have 2 schemas: 1.parameter schema: define data passed in from parent side(we can decide wt data we want from parent or calling side)
+                                    2.calling recipe-to pass on to the child/(recipe function-before calling with the recipe)
+           2. result schema:configure data to return to parent/calling recipe
+.."Name,Parameter Schema,Result Schema" can be configured in the call Recipe Trigger.
+recipe funtion by workato:Error handling,New customer workflow,New It ticket helpdesk,Rehire Workflow,Reusable update employee workflow
+.The call from the parent recipe to the child recipe acts as Trigger event
