@@ -1,1 +1,56 @@
-
+Workbot is a bot platform that looks & feels like a custom-built internal app. It allows you to eliminate app-hopping and bridge your business applications into one interface,right within slack.
+Instead of switching b/w multiple windows, bots provide a minimalistic presentation of critical actions in a single pane of glass.
+How does work bot works:
+      1. connect to any app with APIs like REST and SOAP, databases,or file systems.
+      2. Define the trigger
+      3. Define the actions
+      4. Execute the workflow
+2 simple kinds of bots:
+         1. Click-navigation chatbot: involoves through a consistent and predictable UI to execute tasks.
+         2. Natural language chatbots:which utilize AI from tools and engines like Google Dialogflow, Amazon lex, and IBM wtason to provide a conversational experience in executing tasks.
+Accelerators are Workato's pre-packaged solutions for common automations with high resuability across industries.
+Lead Bot: An intuitive bot whose goal is to deliver, review,qualify and assign leads-all with a custom UX designed for speed.
+Lead bot helps in:
+      Book more meetings
+      connect with leads
+      create a top-tier experience for new customers
+Firefighter Bot: a helpful assistant focused on facilitating internal requests.
+      putting out fires
+      solve many small problems at once
+using this bot we can set automatic reminders and escalations and create and approve requests, all without leaving your slack window.
+this is more used for IT helpdesk and lifecycle management.
+.Bots can be configured with many features and are compatible with apps like Salesforce, Workday, and ServiceNow;
+.databases like SQL Server, MySQL, and Snowflake; 
+.and files like SFTP, Google Drive, OneDrive, and Box.
+.Workbots have powerful flexibility, range, and customizability, they can be applied to nearly any business need.
+.Most importantly, the Enterprise Workbots for Slack provide maximum enterprise-grade security and governance for consuming automations with peace of mind.
+HR bot: helping you execute end-to-end hiring, onboarding and other HR processess.
+This bot makes it easy to review feedback from candidate interview panels that would normally live within a recuriting systems.
+3-Worded new command trigger: to uniquely identify & execute wrokbot for slack recipes for their specific workflows.
+Slash command is a trigger that's baked into a 3-worded new command trigger. this menas that a workbot recipe can be trigger from both slack interactive components such as slack buttons, select menus, Datapickers etc. and by typing slash "/" followed by the command name.
+Global shortcut: similar to a slash command can ne invoked anywhere in slack execute a workflow that doesn.t require context.
+Message shortcut: useful in workflows where the starting point is a slack message you'd like to extract with other background details.
+The New Dynamic Menu Event Trigger is used to dynamically present a list of options in a select menu based on what users type in real time.
+      Trigger that is always paired with a return menu options action.
+      Used to dynamically present a list of options in a select menu
+      Always involves a minimum of 2 recipes
+      A parent recipe that creates the select menu.
+      A child recipe is invoked from the parent recipe to perform three important things.
+The child recipe:
+         1. It monitors for dynamic menu events from dynamic menus in modals or trigger parameters.
+         2. It dynamically retrieves menu options from backend systems, based on the type-ahead and any search parameters
+         3. It returns the menu options to the primary or parent recipe, which will the continue the workflow.
+.Message Attachments allow users to display more information to recipients. This includes: 
+        1.The message title
+        2.A link within the message title
+        3.A message body, known as attachment text
+        4.Attachment color, which is useful when users have implemented a system of color coding for different kinds of messages
+        5.Image URL which represents an image
+Tips to improve your post:
+         1. slack markdown and emojis
+         2. Attachement Message field
+         3. Attachment colors
+         4. Attachment title links
+.*hello*-prints bold hello
+.'hello'-creates code snippet
+..Idle time between stakeholder handoffs is a common source of productivity loss
