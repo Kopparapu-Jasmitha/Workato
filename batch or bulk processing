@@ -1,1 +1,19 @@
-
+.Batch processing : IT is a method of running high-volume,repetitive data jobs.Efficient way of moving large volumes of data across systems. 
+                    .The batch method allows users to process data with little or no user interaction.
+                    .To achieve best results,always match a batch trigger with batch actions.
+.Batch triggers:.Total run time decreases significantly due to the reduction in wait time for API responses
+                .Trigger events are retrived in lists instead of single events
+                . The batch size depends on the application we are using like salesforce means 2000
+.Batch actions: these are of the form- create ,update,upsert batch records
+                .upsert-updates or freates multiple records in a single action
+                       .requires a list of records with IDs to be updated as the input
+                 .create- create multiple records in a single action ex:Move a list of records from source app to target app
+                  .update- update multiple records in a single request
+                            . requests a list of records with IDS to be updated as the input
+.bulk processing:It ensures that we can do large quantities of processing while minimising the users wait time.
+                 .Useful in bussiness processes that requires mass data transactions and syncing data information.
+                  . Not all apps has bulk action ,bulk action is availability depends on the appa Api(salesforce,netsuite,googlesheets)
+. create bulk-Create list of new records in a single action.
+              . Field configuration allows data mappings for creation of records.
+.upsert bulk-create list of new records in a single actions and update list of existing records.
+            . A primary key such as External ID is required to determine whether a record exists.
