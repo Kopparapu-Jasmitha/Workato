@@ -1,1 +1,25 @@
+csv files-comma seperated values
+.text file, stores tabular data, human -redable plain text, each line=one data record,same number of fields,seperated by commas.
+. csv files are used commonly for exchanging information between systems of different architecture.
+. easy parsing and creating, faster to implement,high compression,smaller data files.
+ .A delimiter is a sequence of one or more characters for specifying the "boundary" between separate, independent regions in plain text, mathematical expressions or other data streams.
+Other delimiters include: space,Tab,Colon,Semicolon,Pipe
+enclosing characters-single ,double quotes
+.CSV files also simplify workflows by facilitating batch processing between system.
+.Connector-specific parsers-Certain connectors have triggers/actions that can parse CSV content. These are called connector-specific parsers or external parsers.
+.Workato connectors that feature built-in CSV capabilities include:Box, Dropbox, Google Drive, and other cloud storage solutions.
+.Salesforce, Netsuite, Zendesk, and other applications that store data in tables.
+.External parsers can serve as triggers for your recipes.
+.Workato tool available as an action in any recipe and can parse up to 50k rows.
+
+
+Working with Data bases:
+.A database is a collection of information that is organized so it can be easily accesssed,managed,and updated by many users via computer system.
+.there are many diff types of databases: relational,document,key-value stores,etc.
+. relational databases (rdbms)- A rdbms is a type of database that stores and provides access to data points that are related to one another
+       ex:sql server, oracle,my sql
+        .The data is stored in tabular form of columns and rows. coloumn-attribute, row- record.
+        . SQL is the laanguage used to query RDBMS including operations such as CURD and searching records.
+.RDbMS can be connected on-premise or cloud.
+.
 
