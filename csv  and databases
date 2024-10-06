@@ -21,5 +21,27 @@ Working with Data bases:
         .The data is stored in tabular form of columns and rows. coloumn-attribute, row- record.
         . SQL is the laanguage used to query RDBMS including operations such as CURD and searching records.
 .RDbMS can be connected on-premise or cloud.
-.
+.run custom sql-action type
+.execute stored procedures- action types
+.select rows-action types
+.1.new row, 2.New/updated rows 3.new rows via custom sql 4.new/ updated via custom sql(batch)-insert/updated,5.scheduled query(batch) using custom sql-some rdbms apps only support
+.CRUD operations : covers most of the interaction that we want to perform  in database
+.create-Inserts a single row into selected table.
 
+recipeOPS:
+.Recipe Ops is a connector in Workato that enables the building of recipes to monitor and manage other recipes.
+.Workato's RecipeOps allows you to monitor your recipes, automate recovery and provide intelligent operations.
+.status reporting,-recipe watch
+.monitor mission critical operations-recipe watch
+.loss less pause,resume,auto-retry-Automated recovery
+.custom workflows based on error types and messages-automated recovery
+.Automatically start/stop during planned downtimes-recipe watch
+.workflows when new collaborators join-Intelligent Operations
+.reduce unplanned downtime-Automated recovery
+.Custom rule bots,reporting and recovery-intelligent operations.
+Triggers:
+Failed Jobs:
+.The failed job trigger is able to monitor all active recipes or selected recipes, for failed jobs
+
+
+  
