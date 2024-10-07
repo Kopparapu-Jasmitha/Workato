@@ -1,5 +1,5 @@
 csv files-comma seperated values
-.text file, stores tabular data, human -redable plain text, each line=one data record,same number of fields,seperated by commas.
+.text file, stores tabular data, human-redable plain text, each line=one data record,same number of fields,seperated by commas.
 . csv files are used commonly for exchanging information between systems of different architecture.
 . easy parsing and creating, faster to implement,high compression,smaller data files.
  .A delimiter is a sequence of one or more characters for specifying the "boundary" between separate, independent regions in plain text, mathematical expressions or other data streams.
