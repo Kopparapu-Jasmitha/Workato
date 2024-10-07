@@ -42,6 +42,16 @@ recipeOPS:
 Triggers:
 Failed Jobs:
 .The failed job trigger is able to monitor all active recipes or selected recipes, for failed jobs
+.Customer Usage Threshold Reached--This will monitor all customers and triggers when a customer reaches thresholds of their usage limits for tasks according to their plan.
+           . only OEM(original equipment manufacturer) can use the trigger
 
-
-  
+Http connector:
+Pro: The HTTP connectors enables quick connectivity to custom applications or application connections not yet available through workato.
+Cons: connectors is unable to handle certain complex API functionality.
+Pro: It is suitable for one-off requirements to connect to add/or perform an action within an application.
+Cons: Actions are not scalable.
+.Requires pagination support-Connector SDK
+.Does not require multi-part or binary support-HTTP Connector
+.API endpoint exists but an OOB connector is not available in our application directory-Use HTTP Connector
+.API endpoint exists but an OOB action is not available for the particular endpoint-Use HTTP custom action
+.There are two common types of web service APIs: Simple Object Access Protocol (SOAP) and Representational State Transfer (REST).
