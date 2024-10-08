@@ -1,10 +1,57 @@
 Recipe Life Cycle Management:
 .Guide teams from automated discovery to production.
 . Helps streamline end-to-end automation delivery process.
-.Appliies to abyproject regardless of methodology.
+.Applies to abyproject regardless of methodology.
+.Recipe lifecycle management helps organizations create a collaborative environment to share recipes between developers, testers, and operations teams.
 Benefits:
 .Improve Productivity through effective collaboration
 .Enhances bussiness responsiveness to change 
 .Increase bussinesss value through improved quality of service
 planning for RLCM:
 1.Identify environment strategy,roles and access policies-->2.Understand recipe lifecycle stages and governance process-->3.Define the recipes environment promotion process
+Environment Management and tools:
+Environment strategy:
+.Planning and structuring different environments.
+.Good environment helps multiple teams collaborate efficiently.
+.recommend to have 3 sep environments- dev/Test/production-security and limited actions for bussiness systems.
+                .Improve resilence by managing disruptions(dev/test)
+                .Team efficiency improves for Better control with seamless handover between teams
+Decentralized Governance:
+   pros:1.Seperation of concerns, 2. Enhanced Control
+   cons: 1. Duplication of effort  2. Enforcing best practices across teams
+Centralised Governance: Is a approach i sto segment on eor more team accounts to allow access to different folders by different teams.
+    pros:1.Consistent governance process 2. Prevents shadow IT
+    cons:1.Role Management 2. Increased audit requirements
+Teams:
+.setup centralised access provisioning
+.appropriate reviews and approvals of non-standard requests
+.Use SSO(single-sign-on)/JIT or 2FA along with standardized identities- It eliminates the manual effort for managing user accounts and selecting permissions.
+.Ensure team members have proper access to do their jobs successfully.
+.Detect violations to prevent unauthorized activity.
+.enforce policies consistently by Monitoring and auditing environment access
+.easily filter to find roles,folder acess, and authentication methods for users.
+.sort by latest activity and link to activity audit
+.Review folder access for each user and role
+.Check authentication method using security policies such as sso
+.consider setting up automatic alertys foe policy violations.
+Folder structure:
+.Easier management and enhaced security
+.Create seperate working spaces for a group of collaborators.
+.Common way to organize recipies is to assign a folder to a bussiness unit or funtional areas.
+.Avoid having many recipies in a single folder, including the default  home folder.
+.Use nested folders in each functional area to further organize recipes and connections relevant to specific projects.
+.Consider keeping the samefolder structure and names across dev,test, and production environments for uniformity.
+.Scope shared connections and callable recipes by functional area.
+.Optionally, restrict access to assets by team in shared workspace.
+Recipe Naming Convention:
+. FAcilitate communication btw members
+.Include both an "automation Number" and recipe Identifier.
+.Create a seperate spread sheet or other shared mechanism to keep inventory and mange unique identifiers.
+.Avoid reusing decommisioned IDs
+.Avoid naming assets based on enironments
+.. Admin,Anaylst,Operator are three default system roles in every team account
+
+.Dependency graph is the Workato capability can you use to assess the impact on shared assets such as callable recipes before implementing new changes
+.How can you ensure policy compliance in your Workato environments?
+ .Using Workato's activity audit logs to conduct regular audits
+
