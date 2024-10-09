@@ -51,7 +51,216 @@ Recipe Naming Convention:
 .Avoid naming assets based on enironments
 .. Admin,Anaylst,Operator are three default system roles in every team account
 
+
+Recipe Lifecycle Management for Environments 
+
+It is a series of steps your team can follow, from discovering automation ideas too implement and running workflows in production.
+Help streamline end-to-end automation delivery process
+Applies to any project regardless of methodology
+Benefits of Recipe life cycle management:
+      Improve productivity through effective collaboration
+      Enhance business responsivesmess to change
+      Increase business value hrough improved quality
+Environment strategy: It is all about planning and structuring different enviroments. 
+Good environmrnt strategy helps multiple teams collaborate efficiently.
+benifits of Environment strategy:
+      We recommend having atleast 3 seperate environments for Dev, Test, and Production
+      Improve resilience by managing disruptions
+      Enhance security and compliance
+      Better control with seamless handover b/w teams
+      Facilitate training of new members in a production-like environment
+Environment strategy:
+      Define lifecycle stages
+      Identify individual roles and responsibilities
+      Identify how many different teams you need to support
+Decentralized Governance:We have a sales team and finance team building recipes independently for compliance reasons.
+You can set up a seperate development, test and production environment for each group.
+
+                     Pros                                    Cons
+
+            Seperation of concerns                     Duplication of efforts
+
+            Enhanced control                           Enforcing best practices across teams
+
+Centralized Governance: It is to segment one or more team accounts to allow access to diff folders by diff teams.
+
+
+                     Pros                                             Cons
+
+            Consistent governance processes                     Role management
+
+            Prevents shadow IT                                  Increased audit requirements
+
+Roles and responsibilities:
+
+                        Applicate Admin                        end-to-end change owneeship
+Change Owner            Application Support                    Implement and test changes
+                        Functional Analyst                     can create/edit recipes in non-production environment
+                        Eg: HR Analyst                         Cannot to create connections
+                                                               
+
+                                                               
+                        Business SME                           Assess and authorize changes
+Change Manager          Process Analyst                        Coodination and communication
+                        Business Analyst                       Oversight and ownership of the full worakto platform
+                        Eg:Platform Admin                      Full access to platform and manages core security configuration
+
+                                                               
+                        Operations lead                        Represent change Advisory Board
+Change Approver         COE lead                               Maintain devlopment standards
+                        Solution Architect                     
+
+
+                       Operations Engineer                    Plan and manage production releases
+Release Manager        COE lead                               Rollback and communication planning
+                       Application Admin                      Can import/export recipes b/w environements
+                       Eg: HR Operations                      Can create/update recipes in production environment
+
+
+
+                       Technical Business SME                  Monitor and report incidents
+Incident Manager       Application Admin                       Support problem resolution
+                       Centralized IT team                     Can view job reports in prodution enviroment
+                       Eg: HR Manager                          Cannot create/edit recipes in prodution environment 
+
+Recipe Lifecycle stages:
+         Plan for building and operating automations
+         Defines a set of steps to help deliver automations
+         Improve teams overall effectiveness
+Seamless collaboration with RLCM:
+         Span multiple teams from differnr business units
+         Manage and track tasks when you have several projects moving together
+         vital to cohesive organization working towards common goal
+
+RLCM:
+      Discover: change management
+                     Adapt change and release management processes
+                     intake and manage automation projects
+                     Track and manage automation change requests as independent projects.
+                     Prioritize change requests
+                     identify and enforce project workflow to best suit organization
+                     Review and approval stages for each change
+      Discover: Dependency Management
+                     Manage dependencies b/w recipes, connections, lookup tables etc
+                     critical function of managing automation lifecycles
+                     Analyze and asses impact on shared assets before making changes
+                     Coordinate shared asset changes such as calloble recipes or custom connectors.
+                     Identify releases that will deploy shared asset changes in production
+
+
+      Implement: Recipe Review
+                     Essential checkpoint
+                     Enforce standards
+                     Adhere to security guidelines      
+                     Ensure quality deliverables
+                     Ensure compliance to security standards, naming conventions, design best practices and more
+                     Facilitate recipe review through a pull request(PR) feature of an external version control system.
+                     Provide review comments or request changes, and adjudicate changes for next lifecycle stage
+      Implement: Testing
+                     Inadequate testing can cause productivity loss, system outages, and data inconsistencies
+                     Risk being out of compliance with laws, internal policies or regulatory requirements.
+                     Test recipes before going live
+                     Check recipes for defects and fitness for business requirements to ensure they perform efficiently
+                     Have a dedicated Quality Assurance team for testing.
+                     Devlopers can test recipes to perform functional testing
+                     One or more business stakeholders perform functional testing
+                     Validate automation addresses user expectations.
+      Implement: Testing best practices
+                     Understand end-to-end workflow and applications involved
+                     Identify different test scenarios
+                     test scenarios should provide adequate coverage including error handling validation
+                     Test cases should include test data, preconditions, and expected outcomes
+                     Identify and plan for non-functional testing needs
+                     Test every change
+      Implement: Regression Testing 
+                      Design automations using callable recipes to perform business logic
+                      Group multiple test recipes in a test suite for use in CI/CD(continous integration and delivery) pipeline
+      Implement: versioning
+                      Every time you save a recipe a new recipe version is created
+                      optonally use external version control systems to maintain environment snapshots
+                      Directly map workato packages in external version control systems. 
+                      Avoid making recipe changes outside of workato platform
+
+
+      Operate: Automation
+                  Lookup tables maintain lists of important recipes
+                  Monitor status of critical recipes with recipeOps
+                  Execute steps of restart recipes or send notifications with recipeOps if ctitical errors encountered
+                  Manage third-party application planned downtime
+                  Maintain schedule in lookup table
+                  Automatically stop and start recipes for maintenance window
+                  Restart recipes to consume any unprocesses business events
+
+                     Automated Monitoring:
+                                 Automated monitoring of mission-critical automations with recipeops
+                                 Automatically manage planned downtime
+                                 status alerts
+                     Automated Recovery:
+                                 Zero event loss automation pause,resume, and auto-retries
+                                 Business processcentric custom recovery workflow
+                                 Workbot based reporting recovery
+ Automated Monitoring +  Automated Recovery = Intelligent Operations
+                     Intelligent Operations:
+                                 Increase operational uptime
+                                 Discover and troubleshoot operational and business process issues faster
+                                 Increased stakeholders trust
+                                 Automate workflows to manage platform collaborators
+
+      Operate: Auditing
+                     Regular compliamce audits of production environments
+                     Governance and oversight ensures only approved changes are promoted to production
+                     Regular track changes made to recipes, connections, folders, and more
+
+Manifest: It is a record of all the selected recipes and their dependencies.
+Exported package includes all selected recipes and their dependencies need for automation to work
+Release types:
+            Major:
+                  New automation or major enhancements
+                  All assets are built,test and implemented together
+                  Regressing tested to ensure zero impact on existing bevaior
+            Minor:
+                  Includes only changes assets since last release
+                  Limited testing requirements
+                  Minimal impact on existing business process behavior
+            Bug-fix:
+                  Production issues fixed with configuration changes
+                  Production issues fixed with recipe changes
+
+Release planning:
+            Build & test Plan
+                        Approved changes
+                        test results
+                        user acceptance criteria
+            Deployement plan
+                        Release package
+                        Rollback plan
+                        Production freeze schedule
+            validation plan
+                        Deployment approval
+                        Release success validation
+            communication plan
+                         End-user communication
+                         End-user training
+            Review plan
+                         Monitor release
+                         improve metrics
+                         Lessons learnt from feedback for next release
+
+
+Continous Integration(CI):
+     Benefits:
+            Faster release cycles
+            Deliver quality automations
+      Goal:
+            Automate way teams build,test and package automations
+            helps automate delivery to multiple enviroments
+            Easier for teams to coordinate deployment,run quality controld on release, and reduce errors.
+
+
 .Dependency graph is the Workato capability can you use to assess the impact on shared assets such as callable recipes before implementing new changes
 .How can you ensure policy compliance in your Workato environments?
  .Using Workato's activity audit logs to conduct regular audits
 
+.A Manifest is a record of all the selected recipes and their dependencies, such as application connections, lookup tables, and account properties.
+.The exported package includes all selected recipes and their dependencies needed for automation to work.
+.The predictive approach to identifying recipes for optimization can be used to forecast recipe task utilization using only a small amount of run history. 
