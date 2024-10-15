@@ -1,0 +1,17 @@
+Gears framework:
+.The GEARS Framework is a collection of guides, best practices, and other assets that help you build, maintain and mature your automation practice. 
+.1.Govern 2. Enable 3. Adopt 4.Run  5.Scale
+
+Collection by Workato:
+
+.Collection by Workato- This app is a robust native application in Workato.
+.SQL Statements- Can be used to query tables when using Collection.
+.Moving Large Datasets-A capability in Collection to run recipes with 1,000 or 100,000 records
+.Collection Lists - This only exist for the duration of the job and will not persist across multiple jobs.
+.WHERE, GROUP BY and JOIN-Common SQL keywords to manipulate data from tables into your desired format.
+.Database Table- This corresponds to creating a list in Collection.
+
+. collection works like a database where it can store lists,which correspond to database later.
+. Creates a collection list in the recipe from the input list.- consists of column headers according to schema of the list
+. What actions should be used to allow you to perform standard SQL queries on your list?--Query Lists in Collection.
+. 
