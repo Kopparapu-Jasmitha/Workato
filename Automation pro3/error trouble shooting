@@ -18,7 +18,9 @@ Recipe-design time errors:
 .aPP CONNection Invalid and the recipe is unable to connect - 401 unauthorized error message.
 .Connected user does not have the right permission-403 forbidden msg- Update the connected user's permissions to provide required read/write permission scopes.
 .Recipe makes an invalid API call-Schema errors-Carry out a schema refresh for the recipes with schema errors.
-.Recipe makes an API Call that times out- timeout error -f an error keeps occurring, check the API uptime status of the app that the recipe keeps failing at, or reach out to your Customer Success Manager.
+.Recipe makes an API Call that times out- timeout error -if an error keeps occurring, check the API uptime status of the app that the recipe keeps failing at, or reach out to your Customer Success Manager.
 .Automatically stopped after 60 trigger errors-Recipe will automatically be stopped.-Critical, non-transient error with the trigger configuration or connection that needs to be fixed.
 .When trigger filters are logically incorrect or too restrictive-will filter out all events because they do not satisfy the trigger filter condition.
+--Jobs--
+.When an active recipe processes a trigger event. (i.e. actions in the recipe are executed, it results in a job)
 .
