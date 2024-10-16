@@ -23,4 +23,17 @@ Recipe-design time errors:
 .When trigger filters are logically incorrect or too restrictive-will filter out all events because they do not satisfy the trigger filter condition.
 --Jobs--
 .When an active recipe processes a trigger event. (i.e. actions in the recipe are executed, it results in a job)
-.
+
+--Recipe Logic Errors--
+.1.Incorrect recipe step indentations
+ 2.Incorrect list management
+ 3.Infinite looping
+ 4.Unexpected trigger events(data duplication)
+ 5.Missing trigger events
+--Step Indentation--
+ .Indented Steps under IF steps will only be carried out when the condition is mer.
+... Job Error is when a trigger event is found and the recipe is being processed, but an error occurs when  completing the job.
+...What would happen if a trigger monitors for new and updated objects and on one of its actions it updates the same object?-Infinite looping
+.. To resolve an infinite loop, you should -Implement Filters in the Trigger
+..
+
