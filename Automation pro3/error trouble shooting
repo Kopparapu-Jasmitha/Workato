@@ -1,1 +1,24 @@
+Recipe-design time errors:
+-- Missing input fields--
+ . dEtects missing values or datapill in required input field
+ . resolved by putting values in the fields
+-- formula errors--
+ . Mispelled formulas, formula syntax error,symbols in wrong format,Improper spacing b/w formulas and operators
+ --invalid datapills--
+.when the datapill locations are invalid
+.field no longer exixts in the source application this, happens when the field is deleted.
+--app connection errors--
+.App credentials were changed
+.User does not have permossions to read/write selected records
+.Connected user permissions were changed
 
+ Trigger errors:
+.Trigger errors occur when the recipe tries to retrieve trigger events by polling the trigger app, but fails to fetch trigger events successfully
+.Cases- When API call times out,Automatically stopped after 60 trigger errors
+.aPP CONNection Invalid and the recipe is unable to connect - 401 unauthorized error message.
+.Connected user does not have the right permission-403 forbidden msg- Update the connected user's permissions to provide required read/write permission scopes.
+.Recipe makes an invalid API call-Schema errors-Carry out a schema refresh for the recipes with schema errors.
+.Recipe makes an API Call that times out- timeout error -f an error keeps occurring, check the API uptime status of the app that the recipe keeps failing at, or reach out to your Customer Success Manager.
+.Automatically stopped after 60 trigger errors-Recipe will automatically be stopped.-Critical, non-transient error with the trigger configuration or connection that needs to be fixed.
+.When trigger filters are logically incorrect or too restrictive-will filter out all events because they do not satisfy the trigger filter condition.
+.
