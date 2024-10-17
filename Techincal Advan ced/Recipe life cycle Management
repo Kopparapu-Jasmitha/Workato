@@ -264,3 +264,5 @@ Continous Integration(CI):
 .A Manifest is a record of all the selected recipes and their dependencies, such as application connections, lookup tables, and account properties.
 .The exported package includes all selected recipes and their dependencies needed for automation to work.
 .The predictive approach to identifying recipes for optimization can be used to forecast recipe task utilization using only a small amount of run history. 
+..When working with a Relational Database Management System connection, like SQL Server, a common trigger to use whenever new data is introduced to the database is  New row
+..Workato utility supports SQL syntax statements to query and manipulate large (1K - 100K records) ephemeral datasets?-Collection by workato
