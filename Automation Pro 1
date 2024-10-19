@@ -4,7 +4,7 @@ It allows workato to automate bussiness processes(hiring the people and that pro
 In this no interchanging within the applications is not there and no manual performing task is there. It allow users to automate bussiness process.
 Tools: 
         which handles the needs of an enterprise by having different features
-1. iPaas:Data is stored
+1. iPaas(Integration Platform as a Service):Data is stored whether in on-premise or cloud.
 2. ETL/ELT: Involving bulk tranfers of data and records and syncing can be done by workato 
 3. API Management: you can expose your integration to your external parties or for external apps.
 4.Workflow Automation: it can be created by workato
